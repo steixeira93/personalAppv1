@@ -2,6 +2,8 @@
 import Layout from '@layouts/Layout.astro';
 import Main from '@components/Main.astro';
 import H1 from '@components/H1.astro';
+import { Image } from 'astro:assets';
+import email from '../../public/images/email.png'
 ---
 
 <Layout title="Welcome to my space">
@@ -10,7 +12,10 @@ import H1 from '@components/H1.astro';
 			<p>i'm a software engineer with passion to discover things and help people through the tech.</p>
 			<p>if u intresting to contact me, feel free to send dm in all of my social medias: </p>
 			<ul class="justify-between">
-				<li><a href="https://www.linkedin.com/in/samuelteixeira1337">linkedin</a></li>
+				<li class="flex gap-x-6 py-5">
+					<a href="https://www.linkedin.com/in/samuelteixeira1337"> linkedin</a>
+					<a href="https://www.github.com/steixeira93">github</a>
+				</li>
 			</ul>
 
 	</Main>
