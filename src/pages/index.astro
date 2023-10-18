@@ -2,15 +2,21 @@
 import Layout from '@layouts/Layout.astro';
 import Main from '@components/Main.astro';
 import H1 from '@components/H1.astro';
+import { Image } from 'astro:assets';
+import email from '../../public/images/email.png'
 ---
 
 <Layout title="Welcome to my space">
 	<Main>
 		<!-- <H1 text="some stuffs"></H1> -->
-			<p>i'm a software engineer with passion to discover things and help people through the tech.</p>
-			<p>if u intresting to contact me, feel free to send dm in all of my social medias: </p>
+			<p>i'm a software engineer passionate about discovering things and helping people through technology</p>
+			<p>involved with the javascript ecosystem and passionate about golang</p>
+			<p>if you are interested in contacting me, feel free to dm me on linkedin and check out my projects on github:</p>
 			<ul class="justify-between">
-				<li><a href="https://www.linkedin.com/in/samuelteixeira1337">linkedin</a></li>
+				<li class="flex gap-x-6 py-5">
+					<a href="https://www.linkedin.com/in/samuelteixeira1337"> linkedin</a>
+					<a href="https://www.github.com/steixeira93">github</a>
+				</li>
 			</ul>
 
 	</Main>
@@ -19,8 +25,19 @@ import H1 from '@components/H1.astro';
 			font-size: 1.1rem;
 			line-height: 1.5;
 			margin-top: 1rem;
+			font-family: 'ShareTech-Regular';
+			src: url('../../public/fonts/ShareTech-Regular.ttf') format('ttf');
+		}
+		
+		a {
+			font-size: 1.1rem;
+			line-height: 1.5;
+			margin-top: 0.01rem;
+			margin-left: 0.03rem;
 			font-family: 'Nunito-Regular';
 			src: url('../../public/fonts/Nunito-Regular.ttf') format('ttf');
+			color: #000;
+			text-decoration: underline;
 		}
 	</style>
 </Layout>
