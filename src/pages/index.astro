@@ -1,7 +1,26 @@
 ---
-import Base from '@layouts/Base.astro';
+import Layout from '@layouts/Layout.astro';
+import Main from '@components/Main.astro';
+import H1 from '@components/H1.astro';
 ---
 
-<Base title="Welcome to my space">
-	Hello World
-</Base>
+<Layout title="Welcome to my space">
+	<Main>
+		<!-- <H1 text="some stuffs"></H1> -->
+			<p>i'm a software engineer with passion to discover things and help people through the tech.</p>
+			<p>if u intresting to contact me, feel free to send dm in all of my social medias: </p>
+			<ul class="justify-between">
+				<li><a href="https://www.linkedin.com/in/samuelteixeira1337">linkedin</a></li>
+			</ul>
+
+	</Main>
+	<style>
+		p {
+			font-size: 1.1rem;
+			line-height: 1.5;
+			margin-top: 1rem;
+			font-family: 'Nunito-Regular';
+			src: url('../../public/fonts/Nunito-Regular.ttf') format('ttf');
+		}
+	</style>
+</Layout>
